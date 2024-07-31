@@ -100,7 +100,7 @@ resource "azurerm_linux_virtual_machine" "student-vm" {
   computer_name  = "student-vm"
   admin_username = var.username
   admin_password = var.password
-  
+
   depends_on = [ 
     azurerm_network_interface_security_group_association.student-net-nsg
   ]
